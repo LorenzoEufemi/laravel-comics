@@ -14,10 +14,21 @@
     .section-bottom img {
        width: 30px;
     }
+    .current {
+        background-color: #0282F9 ;
+        color: white;
+        transform: translateY(-50%);
+        display: inline-block;
+        padding: 10px 30px;
+        margin: 0;
+        font-size:32px;
+    }
 </style>
 @include('partials.jumbo')
     <section class=" bg-dark">
+
       <div class="container">
+        <h2 class="current">CURRENT SERIES</h2>
         <div class="row row-cols-3 row-cols-md-4 row-cols-lg-6 g-4">
             @foreach ($comics as $comic)
             <div class="col" >
